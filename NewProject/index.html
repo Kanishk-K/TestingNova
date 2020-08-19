@@ -7,152 +7,212 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css'>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="Carousel/Carousel.css">
         <link rel="stylesheet" href="Navbar/Navbar.css">
+        <link rel="stylesheet" href="Cards/Cards.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-            <div class = "container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-trigger="#main_nav">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse" id="main_nav">
-                <div class="offcanvas-header mt-3">  
-                    <button class="btn btn-outline-danger btn-close float-right"> &times Close </button>
-                    <h5 class="py-2 text-white">Main Navbar</h5>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+          <div class = "container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-trigger="#main_nav">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse" id="main_nav">
+              <div class="offcanvas-header mt-3">  
+                  <button class="btn btn-outline-danger btn-close float-right"> &times Close </button>
+                  <h5 class="py-2 text-white">Main Navbar</h5>
+              </div>
+              <ul class="navbar-nav">
+                  <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
+                  <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
+                  <li class="nav-item"><a class="nav-link" href="#"> Services </a></li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="#"> Menu item </a></li>
+                  <li class="nav-item"><a class="nav-link" href="#"> Menu item </a></li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Dropdown right </a>
+                      <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                        <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Dropdown right </a>
+                      <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                        <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                      </ul>
+                  </li>
+              </ul>
+              </div>
+          </div>
+      </nav>
+      <main class="main-content">
+          <section class="slideshow">
+            <div class="slideshow-inner">
+              <div class="slides">
+                <div class="slide is-active ">
+                  <div class="slide-content">
+                    <div class="caption">
+                      <div class="title">Slide title 1</div>
+                      <div class="text">
+                        <p class="slide-desc">Slide description 1</p>
+                      </div> 
+                      <a href="#" class="carousel-btn">
+                        <span class="btn-inner">Learn More</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="image-container"> 
+                    <img src="https://cdn.discordapp.com/attachments/744427419401846907/745475815323467845/maxresdefault.png" alt="" class="image" />
+                  </div>
                 </div>
-                <ul class="navbar-nav">
-                    <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
-                    <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"> Services </a></li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#"> Menu item </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"> Menu item </a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Dropdown right </a>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                          <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
-                          <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Dropdown right </a>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                          <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
-                          <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="slide">
+                  <div class="slide-content">
+                    <div class="caption">
+                      <div class="title">Slide title 2</div>
+                      <div class="text">
+                        <p class="slide-desc">Slide description 2</p>
+                      </div> 
+                      <a href="#" class="carousel-btn">
+                        <span class="btn-inner">Learn More</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="image-container">
+                    <img src="https://cdn.discordapp.com/attachments/744427419401846907/745475989760507994/1219598.png" alt="" class="image" />
+                  </div>
                 </div>
+                <div class="slide">
+                  <div class="slide-content">
+                    <div class="caption">
+                      <div class="title">Slide title 3</div>
+                      <div class="text">
+                        <p class="slide-desc">Slide description 3</p>
+                      </div> 
+                      <a href="#" class="carousel-btn">
+                        <span class="btn-inner">Learn More</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="image-container">
+                    <img src="https://cdn.discordapp.com/attachments/744427419401846907/745476095247253535/1219623.png" alt="" class="image" />
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide-content">
+                    <div class="caption">
+                      <div class="title">Slide title 4</div>
+                      <div class="text">
+                        <p class="slide-desc">Slide description 4</p>
+                      </div> 
+                      <a href="#" class="carousel-btn">
+                        <span class="btn-inner">Learn More</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="image-container"> 
+                    <img src="https://cdn.discordapp.com/attachments/744427419401846907/745513712961716234/HD-Space-Backgrounds.png" alt="" class="image" />
+                  </div>
+                </div>
+              </div>
+              <div class="pagination row justify-content-center">
+                <div class="item is-active"> 
+                  <span class="icon">1</span>
+                </div>
+                <div class="item">
+                  <span class="icon">2</span>
+                </div>
+                <div class="item">
+                  <span class="icon">3</span>
+                </div>
+                <div class="item">
+                  <span class="icon">4</span>
+                </div>
+              </div>
+              <div class="arrows">
+                <div class="arrow prev">
+                  <span class="svg svg-arrow-left">
+                    <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+                    <span class="alt sr-only"></span>
+                  </span>
+                </div>
+                <div class="arrow next">
+                  <span class="svg svg-arrow-right">
+                    <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+                    <span class="alt sr-only"></span>
+                  </span>
+                </div>
+              </div>
+            </div> 
+          </section>
+      </main>
+      <div class="container-fluid parent">
+        <div class="row py-3">
+          <div class="col-12 col-md-6 d-flex justify-content-center">
+            <div class="card-container">
+              <span class="Complete">Complete</span>
+              <img src="https://novacrypt.org/assets/images/ProjectsLogo1x.png" alt="user"/>
+              <h3>Medair</h3>
+              <h6></h6>
+              <p>Drones designed to deliver <br> medical supplies to the front <br> lines of COVID-19 </p>
+              <div class="buttons">
+                  <button class="primary">
+                      Learn More
+                  </button>
+              </div>
+              <div class="tags">
+                  <h6>Tags</h6>
+                  <ul>
+                      <li>Drones</li>
+                      <li>Organs</li>
+                      <li>Engineering</li>
+                      <li>Computer Vision</li>
+                      <li>Routing Algorithm</li>
+                  </ul>
+              </div>
             </div>
-          </nav>
-        <div>
-            <main class="main-content">
-                <section class="slideshow">
-                  <div class="slideshow-inner">
-                    <div class="slides">
-                      <div class="slide is-active ">
-                        <div class="slide-content">
-                          <div class="caption">
-                            <div class="title">Slide title 1</div>
-                            <div class="text">
-                              <p class="slide-desc">Slide description 1</p>
-                            </div> 
-                            <a href="#" class="carousel-btn">
-                              <span class="btn-inner">Learn More</span>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="image-container"> 
-                          <img src="https://cdn.discordapp.com/attachments/744427419401846907/745475815323467845/maxresdefault.png" alt="" class="image" />
-                        </div>
-                      </div>
-                      <div class="slide">
-                        <div class="slide-content">
-                          <div class="caption">
-                            <div class="title">Slide title 2</div>
-                            <div class="text">
-                              <p class="slide-desc">Slide description 2</p>
-                            </div> 
-                            <a href="#" class="carousel-btn">
-                              <span class="btn-inner">Learn More</span>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="image-container">
-                          <img src="https://cdn.discordapp.com/attachments/744427419401846907/745475989760507994/1219598.png" alt="" class="image" />
-                        </div>
-                      </div>
-                      <div class="slide">
-                        <div class="slide-content">
-                          <div class="caption">
-                            <div class="title">Slide title 3</div>
-                            <div class="text">
-                              <p class="slide-desc">Slide description 3</p>
-                            </div> 
-                            <a href="#" class="carousel-btn">
-                              <span class="btn-inner">Learn More</span>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="image-container">
-                          <img src="https://cdn.discordapp.com/attachments/744427419401846907/745476095247253535/1219623.png" alt="" class="image" />
-                        </div>
-                      </div>
-                      <div class="slide">
-                        <div class="slide-content">
-                          <div class="caption">
-                            <div class="title">Slide title 4</div>
-                            <div class="text">
-                              <p class="slide-desc">Slide description 4</p>
-                            </div> 
-                            <a href="#" class="carousel-btn">
-                              <span class="btn-inner">Learn More</span>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="image-container"> 
-                          <img src="https://cdn.discordapp.com/attachments/744427419401846907/745513712961716234/HD-Space-Backgrounds.png" alt="" class="image" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="pagination row justify-content-center">
-                      <div class="item is-active"> 
-                        <span class="icon">1</span>
-                      </div>
-                      <div class="item">
-                        <span class="icon">2</span>
-                      </div>
-                      <div class="item">
-                        <span class="icon">3</span>
-                      </div>
-                      <div class="item">
-                        <span class="icon">4</span>
-                      </div>
-                    </div>
-                    <div class="arrows">
-                      <div class="arrow prev">
-                        <span class="svg svg-arrow-left">
-                          <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
-                          <span class="alt sr-only"></span>
-                        </span>
-                      </div>
-                      <div class="arrow next">
-                        <span class="svg svg-arrow-right">
-                          <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
-                          <span class="alt sr-only"></span>
-                        </span>
-                      </div>
-                    </div>
-                  </div> 
-                </section>
-              </main>
+          </div>
+          <div class="col-6">
+
+          </div>
         </div>
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex justify-content-center">
+            <div class="card-container">
+              <span class="Concept">Concept</span>
+              <img src="https://novacrypt.org/assets/images/roket1x.png" alt="user"/>
+              <h3>Medair</h3>
+              <h6></h6>
+              <p>Drones designed to deliver <br> medical supplies to the front <br> lines of COVID-19 </p>
+              <div class="buttons">
+                  <button class="primary hvr-bob">
+                      Learn More
+                  </button>
+              </div>
+              <div class="tags">
+                  <h6>Tags</h6>
+                  <ul>
+                      <li>Drones</li>
+                      <li>Organs</li>
+                      <li>Engineering</li>
+                      <li>Computer Vision</li>
+                      <li>Routing Algorithm</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+
+          </div>
+        </div>
+      </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
