@@ -1,3 +1,9 @@
+
+.navbar{
+  background-color: transparent;
+  transition: 750ms ease;
+}
+
 .offcanvas-header{ display:none; }
 .dropdown .dropdown-menu {
   -webkit-transition: all 0.3s;

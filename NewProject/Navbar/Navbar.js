@@ -15,9 +15,9 @@ $(window).on("load resize scroll",function(){
     var elementTop = $(".parent").offset().top; //Constant as to where an object's y position on the screen is.
     var Bounds = windowTop - elementTop; //Negative at first but as the element goes above the user's screen it becomes positive
     if (Bounds >= 0){
-        $(".navbar").addClass("bg-dark");
+        $(".navbar").css({"background-color":"#292b2c"});
     }
     else{
-        $(".navbar").removeClass("bg-dark");
+        $(".navbar").css({"background-color":"transparent"});
     }
 });
