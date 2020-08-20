@@ -31,9 +31,6 @@
 .btn-outline-primary{
   border-color: #00b8ff ;
 }
-.btn-outline-primary:hover{
-  background-color: #00719c;
-}
 
 @media (max-width: 1200px) {
   .offcanvas-header{ display:block; }
