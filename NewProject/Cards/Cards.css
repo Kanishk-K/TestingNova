@@ -12,7 +12,7 @@
 
  
 .parent {
-    background: linear-gradient(-45deg, #ffffff, #000000, #000000, #000000, #ffffff);
+    background: linear-gradient(-45deg, #000000,#0C5393, #00ADEF,#ffffff);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
     font-family: Montserrat, sans-serif; 
@@ -47,7 +47,7 @@ line-height: 21px;
 }
  
 .card-container {
-background-color: #231E39;
+background-color: #00415A;
 border-radius: 25px;
 box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
 transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
@@ -125,7 +125,7 @@ color: #C400D7;
 }
  
 .tags {
-background-color: #1F1A36;
+background-color: #001F2B;
 text-align: left;
 padding: 15px;
 margin-top: 30px;
