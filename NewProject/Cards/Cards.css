@@ -12,7 +12,7 @@
 
  
 .parent {
-    background: linear-gradient(-45deg, #2d0036, #4f015b, #730283, #9a02ac, #C400D7);
+    background: linear-gradient(-45deg, #000000,#0C5393, #00ADEF,#ffffff);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
     font-family: Montserrat, sans-serif; 
@@ -102,7 +102,7 @@ left: 30px;
  
  
 .card-container .icon {
-border: 1px solid #C400D7;
+border: 1px solid #0C5393;
 border-radius: 50%;
 padding: 7px;
 height: 150px;
@@ -110,8 +110,8 @@ width: 150px;
 }
  
 button.primary {
-background-color: #C400D7;
-border: 1px solid #C400D7;
+background-color: #0C5393;
+border: 2px solid #00ADEF;
 border-radius: 3px;
 color: #fff;
 font-family: Montserrat, sans-serif;
@@ -138,8 +138,8 @@ padding: 0;
 }
  
 .tags ul li {
-background-color: #C400D7;
-border: 1px solid #C400D7;
+background-color: #0C5393;
+border: 1px solid #0C5393;
 color: #fff;
 border-radius: 2px;
 display: inline-block;
