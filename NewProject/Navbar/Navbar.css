@@ -17,6 +17,11 @@
   opacity: 1;
 }
 
+.navbar-brand {
+  font-family: 'Jost', sans-serif;
+  font-size: 1.25em;
+}
+
 @media (max-width: 992px) {
   .offcanvas-header{ display:block; }
   .navbar-collapse {
