@@ -4,4 +4,8 @@ $(".Disp-Img").each(function() {
     $(this).hide();
 
     let img = new PIXI.Sprite.from($(this).attr('src'));
+    img.width = $(this).width();
+    img.height = $(this).height();
+    app.stage.addChild(img);
+    
 });
