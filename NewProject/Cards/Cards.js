@@ -15,7 +15,7 @@ $(".Disp-Img").each(function() {
     app.stage.filters = [displacementFilter];
 
     $(this).parent()[0].onmousemove = function(e){
-        displacementFilter.scale.x = ($(this).parent()[0].width()/2 - e.clientX) / 20;
-        displacementFilter.scale.y = ($(this).parent()[0].height()/2 - e.clientX) / 20;
+        displacementFilter.scale.x = ($(this).width()/2 - e.clientX) / 20;
+        displacementFilter.scale.y = ($(this).height()/2 - e.clientX) / 20;
     }
 });
