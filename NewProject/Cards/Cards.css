@@ -11,6 +11,11 @@
 }
 
  
+.Outside{
+    -webkit-filter: drop-shadow(5px 5px 5px #292929);
+    filter: drop-shadow(5px 5px 5px #080808);
+}
+
 .parent {
     background: linear-gradient(-45deg, #000000,#0C5393, #00ADEF,#ffffff);
 	background-size: 400% 400%;
