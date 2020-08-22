@@ -153,8 +153,8 @@
 }
 .card {
   width: 100%;
-  max-width: 300px;
-  min-width: 200px;
+  max-width: 200px;
+  min-width: 100px;
   height: 250px;
   background-color: #292929;
   margin: 10px;
