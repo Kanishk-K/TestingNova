@@ -80,21 +80,41 @@
   left: 15.625%;
   top: 50%;
 }
-.person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(1), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(1) {
-  left: 50%;
-  top: 15%;
+@media(min-width: 1024px) {
+    .person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(1), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(1) {
+    left: 30%;
+    top: 15%;
+    }
+    .person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(2), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(2) {
+    left: 60%;
+    top: 15%;
+    }
+    .person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(3), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(3) {
+    left: 90%;
+    top: 15%;
+    }
+    .person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(4), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(4) {
+    left: 120%;
+    top: 15%;
+    }
 }
-.person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(2), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(2) {
-  left: 75%;
-  top: 15%;
-}
-.person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(3), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(3) {
-  left: 100%;
-  top: 15%;
-}
-.person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(4), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(4) {
-  left: 125%;
-  top: 15%;
+@media(min-width: 1440px){
+    .person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(1), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(1) {
+        left: 50%;
+        top: 15%;
+    }
+        .person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(2), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(2) {
+        left: 80%;
+        top: 15%;
+    }
+        .person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(3), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(3) {
+        left: 110%;
+        top: 15%;
+    }
+        .person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(4), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(4) {
+        left: 140%;
+        top: 15%;
+    }
 }
 .person-row .person-card .container-fluid {
   position: absolute;
