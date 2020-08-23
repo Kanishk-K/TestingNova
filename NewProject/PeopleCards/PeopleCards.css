@@ -16,120 +16,20 @@
     font-size: 400%;
   }
 }
-.person-row {
-  background: #1d1e1f;
+.person-row div {
+    background-color: #00415A;
+    border-radius: 25%;
 }
-.person-row .person-card {
-  --background:#00415a;
-  --text: #ffffff;
-  position: relative;
-  height: 6rem;
-  box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.05);
+.person-card-title{
+    white-space: nowrap;
+    text-decoration: underline;
 }
-.person-row .person-card .multi-button {
-  z-index: 0;
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-  border-radius: 100%;
-  width: 0rem;
-  height: 0rem;
-  transform: translate(-50%, -50%);
-  transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
+.vert-icon{
+    color: #ffffff;
+    transition: all 0.3s ease;
+    justify-content: center;
 }
-.person-row .person-card .multi-button button {
-  place-items: center;
-  position: absolute;
-  width: 2rem;
-  height: 2rem;
-  border: none;
-  border-radius: 100%;
-  background: var(--background);
-  color: var(--text);
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
-  box-shadow: 0 0 0rem -0.25rem var(--background);
-}
-.person-row .person-card .multi-button button:hover {
-  background: var(--text);
-  color: var(--background);
-  box-shadow: 0 0 1rem -0.25rem var(--background);
-}
-.person-row .person-card .multi-button button:first-child:nth-last-child(1):nth-child(1), .person-row .person-card .multi-button button:first-child:nth-last-child(1) ~ *:nth-child(1) {
-  left: 25%;
-  top: 25%;
-}
-.person-row .person-card .multi-button button:first-child:nth-last-child(2):nth-child(1), .person-row .person-card .multi-button button:first-child:nth-last-child(2) ~ *:nth-child(1) {
-  left: 37.5%;
-  top: 18.75%;
-}
-.person-row .person-card .multi-button button:first-child:nth-last-child(2):nth-child(2), .person-row .person-card .multi-button button:first-child:nth-last-child(2) ~ *:nth-child(2) {
-  left: 18.75%;
-  top: 37.5%;
-}
-.person-row .person-card .multi-button button:first-child:nth-last-child(3):nth-child(1), .person-row .person-card .multi-button button:first-child:nth-last-child(3) ~ *:nth-child(1) {
-  left: 50%;
-  top: 15.625%;
-}
-.person-row .person-card .multi-button button:first-child:nth-last-child(3):nth-child(2), .person-row .person-card .multi-button button:first-child:nth-last-child(3) ~ *:nth-child(2) {
-  left: 25%;
-  top: 25%;
-}
-.person-row .person-card .multi-button button:first-child:nth-last-child(3):nth-child(3), .person-row .person-card .multi-button button:first-child:nth-last-child(3) ~ *:nth-child(3) {
-  left: 15.625%;
-  top: 50%;
-}
-@media(min-width: 768px) {
-    .person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(1), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(1) {
-    left: 50%;
-    top: 15%;
-    }
-    .person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(2), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(2) {
-    left: 80%;
-    top: 15%;
-    }
-    .person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(3), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(3) {
-    left: 110%;
-    top: 15%;
-    }
-    .person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(4), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(4) {
-    left: 140%;
-    top: 15%;
-    }
-}
-@media(min-width: 1336px){
-    .person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(1), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(1) {
-        left: 50%;
-        top: 15%;
-    }
-        .person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(2), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(2) {
-        left: 100%;
-        top: 15%;
-    }
-        .person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(3), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(3) {
-        left: 150%;
-        top: 15%;
-    }
-        .person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(4), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(4) {
-        left: 200%;
-        top: 15%;
-    }
-}
-.person-row .person-card .container-fluid {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-  background: var(--background);
-  color: var(--text);
-  font-family: 'Jost', sans-serif;
-  font-size: 120%;
-}
-.person-row .person-card .container-fluid .position {
-    font-size: 80%;
-}
-.person-row .person-card:hover .multi-button, .person-row .person-card .multi-button:focus-within {
-  width: 10rem;
-  height: 10rem;
+.vert-icon:hover{
+    color: #00b8ff;
+    font-size: 120%;
 }
