@@ -80,7 +80,7 @@
   left: 15.625%;
   top: 50%;
 }
-@media(min-width: 1024px) {
+@media(min-width: 768px) {
     .person-row .person-card .multi-button button:first-child:nth-last-child(4):nth-child(1), .person-row .person-card .multi-button button:first-child:nth-last-child(4) ~ *:nth-child(1) {
     left: 30%;
     top: 15%;
