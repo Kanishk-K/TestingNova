@@ -52,6 +52,11 @@ polygonSeries.mapPolygons.template.events.on("out", event => {
 chart.zoomControl = new am4maps.ZoomControl();
 chart.zoomControl.valign = "top";
 
+let animation;
+setTimeout(function(){
+  animation = chart.animate({property:"deltaLongitude", to:100000}, 20000000);
+}, 3000)
+
 // life expectancy data
 polygonSeries.data = [
   { id: "AF", value: 60.524 },
