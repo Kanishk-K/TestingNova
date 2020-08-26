@@ -18,7 +18,7 @@ title.zIndex = 100;
 
 var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
 var polygonTemplate = polygonSeries.mapPolygons.template;
-polygonTemplate.tooltipText = "{name}: {value.value.formatNumber('#.')}";
+polygonTemplate.tooltipText = "Members in {name}: {value.value.formatNumber('#.')}";
 polygonSeries.heatRules.push({
   property: "fill",
   target: polygonSeries.mapPolygons.template,
@@ -29,13 +29,13 @@ polygonSeries.useGeodata = true;
 
 // add heat legend
 var heatLegend = chart.chartContainer.createChild(am4maps.HeatLegend);
-heatLegend.valign = "bottom";
+heatLegend.valign = "middle";
 heatLegend.align = "left";
-heatLegend.width = am4core.percent(100);
 heatLegend.series = polygonSeries;
-heatLegend.orientation = "horizontal";
+heatLegend.orientation = "vertical";
 heatLegend.padding(20, 20, 20, 20);
 heatLegend.valueAxis.renderer.labels.template.fontSize = 10;
+heatLegend.valueAxis.renderer.labels.template.fill = "#ffffff";
 heatLegend.valueAxis.renderer.minGridDistance = 40;
 
 polygonSeries.mapPolygons.template.events.on("over", event => {
@@ -64,7 +64,7 @@ chart.zoomControl.valign = "top";
 
 let animation;
 setTimeout(function(){
-  animation = chart.animate({property:"deltaLongitude", to:100000}, 20000000);
+  animation = chart.animate({property:"deltaLongitude", to:50000}, 20000000);
 }, 3000)
 
 // life expectancy data
