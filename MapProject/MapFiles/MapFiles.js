@@ -5,16 +5,10 @@ chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
 
 chart.geodata = am4geodata_worldLow;
 chart.projection = new am4maps.projections.Orthographic();
-chart.deltaLongitude = -60;
 chart.panBehavior = "rotateLat";
 chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("#212327");
 chart.backgroundSeries.mapPolygons.template.polygon.fillOpacity = 1;
 
-var title = chart.chartContainer.createChild(am4core.Label);
-title.fontSize = 20;
-title.paddingTop = 30;
-title.align = "center";
-title.zIndex = 100;
 
 var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
 var polygonTemplate = polygonSeries.mapPolygons.template;
@@ -244,3 +238,4 @@ polygonSeries.data = [
   { id: "ZM", value: 57.037 },
   { id: "ZW", value: 58.142 }
 ];
+polygonSeries.exclude = ["UM"];
