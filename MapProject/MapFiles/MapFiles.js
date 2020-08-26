@@ -7,11 +7,10 @@ chart.geodata = am4geodata_worldLow;
 chart.projection = new am4maps.projections.Orthographic();
 chart.deltaLongitude = -60;
 chart.panBehavior = "rotateLongLat";
-chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("#aadaff");
+chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("#212327");
 chart.backgroundSeries.mapPolygons.template.polygon.fillOpacity = 1;
 
 var title = chart.chartContainer.createChild(am4core.Label);
-title.text = "Life expectancy in the World";
 title.fontSize = 20;
 title.paddingTop = 30;
 title.align = "center";
@@ -29,16 +28,6 @@ polygonSeries.heatRules.push({
 polygonSeries.useGeodata = true;
 
 // add heat legend
-var heatLegend = chart.chartContainer.createChild(am4maps.HeatLegend);
-heatLegend.valign = "bottom";
-heatLegend.align = "left";
-heatLegend.width = am4core.percent(100);
-heatLegend.series = polygonSeries;
-heatLegend.orientation = "horizontal";
-heatLegend.padding(20, 20, 20, 20);
-heatLegend.valueAxis.renderer.labels.template.fontSize = 10;
-heatLegend.valueAxis.renderer.minGridDistance = 40;
-
 polygonSeries.mapPolygons.template.events.on("over", event => {
   handleHover(event.target);
 });
