@@ -6,7 +6,7 @@ chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
 chart.geodata = am4geodata_worldLow;
 chart.projection = new am4maps.projections.Orthographic();
 chart.deltaLongitude = -60;
-chart.panBehavior = "rotateLongLat";
+chart.panBehavior = "rotateLat";
 chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("#212327");
 chart.backgroundSeries.mapPolygons.template.polygon.fillOpacity = 1;
 
