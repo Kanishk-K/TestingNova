@@ -28,6 +28,16 @@ polygonSeries.heatRules.push({
 polygonSeries.useGeodata = true;
 
 // add heat legend
+var heatLegend = chart.chartContainer.createChild(am4maps.HeatLegend);
+heatLegend.valign = "bottom";
+heatLegend.align = "left";
+heatLegend.width = am4core.percent(100);
+heatLegend.series = polygonSeries;
+heatLegend.orientation = "horizontal";
+heatLegend.padding(20, 20, 20, 20);
+heatLegend.valueAxis.renderer.labels.template.fontSize = 10;
+heatLegend.valueAxis.renderer.minGridDistance = 40;
+
 polygonSeries.mapPolygons.template.events.on("over", event => {
   handleHover(event.target);
 });
